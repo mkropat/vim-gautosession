@@ -22,7 +22,7 @@ endif
 
 function! s:load_session()
   if s:is_enabled() && filereadable(s:session_path)
-    execute 'source' s:session_path
+    execute 'silent' 'source' s:session_path
   endif
 endfunction
 
